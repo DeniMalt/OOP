@@ -1,0 +1,21 @@
+<web-app>
+    <servlet>
+        <servlet-name>Main.MainPage</servlet-name>
+        <servlet-class>Main.MainPage</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Book.BookServlet</servlet-name>
+        <servlet-class>Book.BookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Main.MainPage</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Book.BookServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+</web-app>
