@@ -11,6 +11,7 @@ public class JsonView {
         JSONArray array = new JSONArray();
         for (Book book : books) {
             JSONObject obj = new JSONObject();
+            obj.put("book_id", book.getBook_id());
             obj.put("title", book.getTitle());
             obj.put("author", book.getAuthor());
             obj.put("year", book.getYear());
